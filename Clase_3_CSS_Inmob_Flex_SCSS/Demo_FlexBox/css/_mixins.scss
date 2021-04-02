@@ -1,0 +1,7 @@
+@mixin mx_footer_header($color : black) {
+    background-color: $color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}

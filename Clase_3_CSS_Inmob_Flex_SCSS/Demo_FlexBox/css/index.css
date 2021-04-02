@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 600px;
+    /* https://flexboxfroggy.com/#es  */
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: center ; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+}
+
+div{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    border: solid black;
+}
+
+#div1{
+    flex-basis: 20% ;
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+#div2{
+
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}

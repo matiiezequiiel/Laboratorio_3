@@ -1,0 +1,78 @@
+*{
+    box-sizing: content-box;
+}
+
+@font-face{
+    src: url(../fonts/PASTOROF.TTF);
+    font-family: metallicaFont;
+}
+
+p {
+    border-width: 4px;
+    border-color: black;
+    border-style: solid;
+    /*border: 4px black solid;*/
+    /* padding-left: 20px; */
+    margin-left: 100px;
+    padding: 5px 10px 5px 10px;
+
+}
+
+.p1{
+    display: inline-block;
+    /* width: 400px; */
+    /* EL 50% DEL ANCHO DEL VIEWPORT */
+    width: 50vw ;
+    /* MEDIDAS DE PX POR DEFECTO * 10EM  */
+    width: 10em ; 
+    text-decoration: underline;
+    text-transform: uppercase;  
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    text-shadow: 2px 2px red;
+    font-family: metallicaFont, sans-serif;
+}
+
+#p2{
+    font-size: 300px;
+    color: red;
+    text-shadow: 6px 6px black;
+}
+
+/* FONTAWESOME PAGINA CON FUENTES, ICONOS TODO */
+
+a{
+    text-decoration: none;
+    font-size: 5em;
+    background-color:violet ;
+    padding: 10px 30px;
+    color: black ;
+    border-radius: 20px;
+    border: 5px solid black;
+    margin: 100px;
+    position: relative;
+    /* position: static; */
+    /* position: fixed; QUEDA FIJO*/
+    left: 100px;
+}
+
+a:hover{
+    background-color: blue;
+}
+
+a:active{
+    background-color: salmon;
+}
+
+
+img{
+    opacity: .5;
+    position: relative;
+    left: -300px;
+    transition: opacity 2s , left 2s;
+}
+
+img:hover{
+    opacity: 1;
+    left : 0px;
+}

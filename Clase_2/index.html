@@ -1,0 +1,112 @@
+<!-- CAMBIO <DIV></DIV> POR <P></P> POR UN TEMA DE QUE SE VEA MAS ESPACIADO EN LA PAGINA -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js"></script>
+    <title>Document</title>
+</head> 
+<body>
+    <form action="pagina1.php" method="POST">
+
+        <fieldset>
+            <LEgend>Datos personales</LEgend>
+            <!-- TITULO RECUADRO -->
+            <P>
+                <label for="txtNombre">Nombre:</label>
+                <!-- Etiqueta, FOR: Con que caja de texto esta linkeada. -->
+                <input type="text" name="varNombre" autocomplete="off" id="txtNombre" required> 
+                <!-- Caja de texto -->
+        
+            </P>
+            <!-- RECUADRO -->
+        </fieldset>
+
+        
+       <P>
+            <label for="txtPass">Password:</label>
+              <!-- Etiqueta, FOR: Con que caja de texto esta linkeada. -->
+            <input type="password" name="varPass" autocomplete="off" id="txtPass" required> 
+        </P>
+
+        
+       <P>
+            <label for="txtEmail">Email:</label>
+              <!-- Etiqueta, FOR: Con que caja de texto esta linkeada. -->
+             <input type="email" name="varEmail" id="txtEmail" required> 
+      </P>
+
+         
+      <P>
+             <label for="txtEdad">Edad:</label>
+            <!-- Etiqueta, FOR: Con que caja de texto esta linkeada. -->
+            <input type="number" name="varEdad" id="txtEdad" required min="0" max="65" value="18" readonly>
+            <!-- CAJA DE TIPO NUMERO OBLIGATORIO CON UN MIN Y MAX PERMITIDO SOLO LECTURA, VALOR 18  -->
+     </P>    
+
+    <Fieldset>
+         <legend>Deporte</legend>
+         <label for="chkBici">Bicicleta</label>
+         <input type="checkbox" name="Bicicleta" id="chkBici">
+         <!-- CHECKBOX -->
+         <label for="chkFutbol">Futbol</label>
+         <input type="checkbox" name="Futbol" id="chkFutbol">
+         <label for="chkBasquet">Basquet</label>
+         <input type="checkbox" name="Basquet" id="chkBasquet">
+    </Fieldset>
+    <fieldset>
+         <legend>Genero</legend>
+         <label for="rdoFemenino">Femenino</label>
+         <input type="radio" name="sexo" id="rdoFemenino" checked>
+         <label for="rdoMasculino">Masculino</label>
+         <input type="radio" name="sexo" id="rdoMasculino" checked>
+         <!-- SON EXCLUYENTES, PARA QUE ESTEN LINKEADOS TIENEN Q TENER EL MISMO NAME. -->
+    </fieldset>
+    <fieldset>
+         <legend>Pais</legend>
+        <label for="cmbPais">Pais</label>
+        <select name="pais" id="cmbPais" >
+        <!-- COMBOBOX, MULTIPLE PARA PODER SELECCIONAR MULTIPLE, EN ESTE CASO DEVUELVE ARRAY-->
+            <optgroup label="America"> 
+            <!-- AGRUPADOR DE OPCIONES -->
+                <option value="1">Argentina</option>
+                <option value="2">Colombia</option>
+                <option value="3">Peru</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="4">Italia</option>
+                <option value="5">Francia</option>
+                <option value="6">España</option>
+            </optgroup>
+            
+        </select>
+
+        <label for="">Comentarios:
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </label>
+
+    </fieldset>
+
+    <video id="video" src="" width="300px" autoplay controls poster=""></video>
+    <!-- VIDEO: CONTROLS PARA TENER OPCIONES PAUSA ETC, POSTER IMAGEN QUE SE QUIERE MOSTRAR DEL VIDEO -->
+    <button id="play">Play</button>
+    <button id="stop">Stop</button>
+
+    <p>
+        <input type="file" name="" id="">
+    </p>
+
+   
+    
+
+            <input type="submit" value="Registrarse">
+            <!-- Boton enviar, value nombre del boton. -->       
+       
+        
+        <!-- <button type=""></button> -->
+        <!-- Solo boton, si quiero q se comporte de alguna forma ponerle el tipo -->
+    </form>
+    
+</body>
+</html>
