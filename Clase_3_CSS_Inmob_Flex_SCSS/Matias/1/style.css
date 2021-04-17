@@ -1,0 +1,40 @@
+.contenedor{
+    background-color: lightslategrey;
+    width: 50%;
+    box-sizing: border-box;
+   
+}
+
+input[type=text]{
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 8px;
+    border-radius: 4px;
+}
+
+table{
+    width: 100%;
+    margin-top: 10px;
+}
+
+th{
+    background-color: gray;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+td{
+    padding: 8px;
+}
+
+.conError{
+    border: 3px solid red;
+}
+
+.sinError{
+
+    border: 3px solid green;
+
+}
