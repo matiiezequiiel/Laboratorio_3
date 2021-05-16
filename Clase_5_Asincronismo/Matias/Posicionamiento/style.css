@@ -1,0 +1,82 @@
+.contenedor{
+    font-weight: bold;
+    font-size: large;
+    background-color: lightslategrey;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-sizing: border-box; */
+    
+   
+}
+
+#btnAdd{
+    position: fixed;
+    top: 90;
+    left: 95%;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+    font-size: xx-large;
+}
+
+.btnAccion{
+    background-color: lightslategrey;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+
+#btnGuardar{
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    background-color:green;
+    color: white;
+}
+
+#btnCancelar{
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+
+}
+
+ input[type=text]{
+    width: 30%;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 4px;
+} 
+
+table{
+    width: 100%;
+    margin-top: 10px;
+}
+
+th{
+    background-color: green;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+td{
+    padding: 8px;
+}
+
+.conError{
+    border: 3px solid red;
+}
+
+.sinError{
+
+    border: 3px solid green;
+
+}
